@@ -423,15 +423,16 @@
 	ol li:before {
 	    display: table-cell;
 	    vertical-align: top;
-	    content: "\2219";
-	    width: 22px;
+	    content: "\f0c8";
+	    width: 20px;
 	    height: 20px;
 	    overflow: hidden;
-	    font-size: 41px;
-	    line-height: 20px;
+	    font-family: "FontAwesome";
+	    font-size: 6px;
+	    line-height: 12px;
 	    color: #940909;
 	    position: relative;
-	    top: -1px;
+	    top: 2px;
 	}
 
 	.novisible-600 {
