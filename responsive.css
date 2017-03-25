@@ -52,7 +52,7 @@
 	}
 
 	.logo h2 {
-	    padding: 0 0 0 2%;
+	    padding: 0 0 0 7%;
 	    font-size: 18px;
 	    line-height: 21px;
 	}
@@ -326,8 +326,6 @@
 	.good-card .img-box img {
 	    max-width: 100%;
 	    max-height: 100%;
-	    min-width: 100%;
-	    min-height: 100%;
 	}
 
 	.good-card .p-1 {
