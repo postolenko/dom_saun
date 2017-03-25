@@ -417,6 +417,7 @@
 	ol li {
 		display: table;
 		width: 100%;
+		min-height: 21px;
 	}
 
 	ol li:before {
