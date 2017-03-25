@@ -24,10 +24,13 @@
 
 	<link rel="stylesheet" type="text/css" href="vendors/css/diamonds.css" />
 
+	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css" />
 
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 
 	<script type="text/javascript" src="slick/slick.js"></script>
+
+	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 	<script type="text/javascript" src="vendors/js/jquery.diamonds.js"></script>
 
@@ -72,7 +75,7 @@
 
 				<div class="col col-2">
 					
-					<ul class="main-nav">
+					<ul class="main-nav resp-nav scroll">
 						
 						<li><a href="#action" class="main-nav-link">Оборудование</a></li>
 						<li><a href="#services" class="main-nav-link">Услуги</a></li>
@@ -87,13 +90,13 @@
 					
 					<div class="cash-box">
 
-						<div class="cash-icon-box">
+						<a href="#" class="cash-icon-box">
 							
 							<i class="cash-icon"></i>
 
 							<p>2</p>
 
-						</div>
+						</a>
 
 						<div class="cash-link-box">
 
@@ -102,6 +105,18 @@
 						</div>
 
 					</div>
+
+				</div>
+
+				<div class="respmenubtn-box">
+
+					<button type="button" class="respmenubtn">
+
+						<span></span>
+						<span></span>
+						<span></span>
+
+					</button>
 
 				</div>
 
@@ -184,51 +199,57 @@
 
 						<div class="big-slider-box wow fadeIn">
 
-							<div class="append-arrows-big-slider"></div>
+							<div class="append-arrows-big-slider clearfix"></div>
 
 							<div class="big-slider">
 								
-								<div class="big-slider-slide">
+								<div class="big-slider-slide clearfix">
 
 									<h2>Harvia Legend 240 Duo</h2>
+
+									<div class="col col-1 clearfix">
+
+										<div class="inner-col-1">
+											
+											<div class="img-box">
+												
+												<img src="img/photo.png" alt="">
+
+											</div>
+
+											<div class="price">
+												
+												<p class="price-val">37 900 <span class="rub">руб.</span></p>
+
+											</div>
+
+										</div>
 									
-									<div class="col col-1">
-										
-										<ol class="mark-v">
+										<div class="inner-col-2">
 
-											<li>Модель надежна и совершенна</li>
+											<h3 class="resp-tab-600">Преимущества</h3>
+											
+											<ol class="mark-v">
 
-											<li>Финское качество</li>
+												<li>Модель надежна и совершенна</li>
 
-											<li>Экономически выгодные и элегантные изделия</li>
+												<li>Финское качество</li>
 
-											<li>Эргономично размещаются	в помещении</li>
+												<li>Экономически выгодные и элегантные изделия</li>
 
-											<li>Корпус печей выполнен из нержавеющей стали</li>
+												<li>Эргономично размещаются	в помещении</li>
 
-											<li>Прочные стеклянные дверцы</li>
+												<li>Корпус печей выполнен из нержавеющей стали</li>
 
-										</ol>
+												<li>Прочные стеклянные дверцы</li>
+
+											</ol>
+
+										</div>										
 
 									</div>
 
 									<div class="col col-2">
-										
-										<div class="img-box">
-											
-											<img src="img/photo.png" alt="">
-
-										</div>
-
-										<div class="price">
-											
-											<p class="price-val">37 900 <span class="rub">руб.</span></p>
-
-										</div>
-
-									</div>
-
-									<div class="col col-3">
 										
 										<div class="article">
 
@@ -271,44 +292,48 @@
 								<div class="big-slider-slide">
 
 									<h2>Harvia Legend 150 SL</h2>
-									
-									<div class="col col-1">
+
+									<div class="col col-1 clearfix">
+
+										<div class="inner-col-1">
+											
+											<div class="img-box">
+												
+												<img src="miniatures_slider/miniature_good_08.jpg" alt="">
+
+											</div>
+
+											<div class="price">
+												
+												<p class="price-val">28 990 <span class="rub">руб.</span></p>
+
+											</div>
+
+										</div>
 										
-										<ol class="mark-v">
+										<div class="inner-col-2">
+											
+											<ol class="mark-v">
 
-											<li>Модель надежна и совершенна</li>
+												<li>Модель надежна и совершенна</li>
 
-											<li>Финское качество</li>
+												<li>Финское качество</li>
 
-											<li>Экономически выгодные и элегантные изделия</li>
+												<li>Экономически выгодные и элегантные изделия</li>
 
-											<li>Эргономично размещаются	в помещении</li>
+												<li>Эргономично размещаются	в помещении</li>
 
-											<li>Корпус печей выполнен из нержавеющей стали</li>
+												<li>Корпус печей выполнен из нержавеющей стали</li>
 
-											<li>Прочные стеклянные дверцы</li>
+												<li>Прочные стеклянные дверцы</li>
 
-										</ol>
+											</ol>
+
+										</div>
 
 									</div>
 
 									<div class="col col-2">
-										
-										<div class="img-box">
-											
-											<img src="miniatures_slider/miniature_good_08.jpg" alt="">
-
-										</div>
-
-										<div class="price">
-											
-											<p class="price-val">28 990 <span class="rub">руб.</span></p>
-
-										</div>
-
-									</div>
-
-									<div class="col col-3">
 										
 										<div class="article">
 
@@ -351,44 +376,48 @@
 								<div class="big-slider-slide">
 
 									<h2>Harvia Legend 240</h2>
-									
-									<div class="col col-1">
-										
-										<ol class="mark-v">
 
-											<li>Модель надежна и совершенна</li>
+									<div class="col col-1 clearfix">
 
-											<li>Финское качество</li>
+										<div class="inner-col-1">
+											
+											<div class="img-box">
+												
+												<img src="miniatures_slider/miniature_good_10.jpg" alt="">
 
-											<li>Экономически выгодные и элегантные изделия</li>
+											</div>
 
-											<li>Эргономично размещаются	в помещении</li>
+											<div class="price">
+												
+												<p class="price-val">33 550 <span class="rub">руб.</span></p>
 
-											<li>Корпус печей выполнен из нержавеющей стали</li>
+											</div>
 
-											<li>Прочные стеклянные дверцы</li>
+										</div>
 
-										</ol>
+										<div class="inner-col-2">
+											
+											<ol class="mark-v">
+
+												<li>Модель надежна и совершенна</li>
+
+												<li>Финское качество</li>
+
+												<li>Экономически выгодные и элегантные изделия</li>
+
+												<li>Эргономично размещаются	в помещении</li>
+
+												<li>Корпус печей выполнен из нержавеющей стали</li>
+
+												<li>Прочные стеклянные дверцы</li>
+
+											</ol>
+
+										</div>
 
 									</div>
 
 									<div class="col col-2">
-										
-										<div class="img-box">
-											
-											<img src="miniatures_slider/miniature_good_10.jpg" alt="">
-
-										</div>
-
-										<div class="price">
-											
-											<p class="price-val">33 550 <span class="rub">руб.</span></p>
-
-										</div>
-
-									</div>
-
-									<div class="col col-3">
 										
 										<div class="article">
 
@@ -431,44 +460,48 @@
 								<div class="big-slider-slide">
 
 									<h2>Harvia Legend 240 SL</h2>
-									
-									<div class="col col-1">
-										
-										<ol class="mark-v">
 
-											<li>Модель надежна и совершенна</li>
+									<div class="col col-1 clearfix">
 
-											<li>Финское качество</li>
+										<div class="inner-col-1">
+											
+											<div class="img-box">
+												
+												<img src="miniatures_slider/miniature_good_03.jpg" alt="">
 
-											<li>Экономически выгодные и элегантные изделия</li>
+											</div>
 
-											<li>Эргономично размещаются	в помещении</li>
+											<div class="price">
+												
+												<p class="price-val">35 790 <span class="rub">руб.</span></p>
 
-											<li>Корпус печей выполнен из нержавеющей стали</li>
+											</div>
 
-											<li>Прочные стеклянные дверцы</li>
+										</div>
 
-										</ol>
+										<div class="inner-col-2">
+											
+											<ol class="mark-v">
 
-									</div>
+												<li>Модель надежна и совершенна</li>
+
+												<li>Финское качество</li>
+
+												<li>Экономически выгодные и элегантные изделия</li>
+
+												<li>Эргономично размещаются	в помещении</li>
+
+												<li>Корпус печей выполнен из нержавеющей стали</li>
+
+												<li>Прочные стеклянные дверцы</li>
+
+											</ol>
+
+										</div>
+
+									</div>								
 
 									<div class="col col-2">
-										
-										<div class="img-box">
-											
-											<img src="miniatures_slider/miniature_good_03.jpg" alt="">
-
-										</div>
-
-										<div class="price">
-											
-											<p class="price-val">35 790 <span class="rub">руб.</span></p>
-
-										</div>
-
-									</div>
-
-									<div class="col col-3">
 										
 										<div class="article">
 
@@ -511,44 +544,48 @@
 								<div class="big-slider-slide">
 
 									<h2>Harvia Legend 240 Duo 5</h2>
+
+									<div class="col col-1 clearfix">
+
+										<div class="inner-col-1">
+											
+											<div class="img-box">
+												
+												<img src="img/photo.png" alt="">
+
+											</div>
+
+											<div class="price">
+												
+												<p class="price-val">37 900 <span class="rub">руб.</span></p>
+
+											</div>
+
+										</div>
 									
-									<div class="col col-1">
-										
-										<ol class="mark-v">
+										<div class="inner-col-2">
+											
+											<ol class="mark-v">
 
-											<li>Модель надежна и совершенна</li>
+												<li>Модель надежна и совершенна</li>
 
-											<li>Финское качество</li>
+												<li>Финское качество</li>
 
-											<li>Экономически выгодные и элегантные изделия</li>
+												<li>Экономически выгодные и элегантные изделия</li>
 
-											<li>Эргономично размещаются	в помещении</li>
+												<li>Эргономично размещаются	в помещении</li>
 
-											<li>Корпус печей выполнен из нержавеющей стали</li>
+												<li>Корпус печей выполнен из нержавеющей стали</li>
 
-											<li>Прочные стеклянные дверцы</li>
+												<li>Прочные стеклянные дверцы</li>
 
-										</ol>
+											</ol>
 
-									</div>
+										</div>
+
+									</div>								
 
 									<div class="col col-2">
-										
-										<div class="img-box">
-											
-											<img src="img/photo.png" alt="">
-
-										</div>
-
-										<div class="price">
-											
-											<p class="price-val">37 900 <span class="rub">руб.</span></p>
-
-										</div>
-
-									</div>
-
-									<div class="col col-3">
 										
 										<div class="article">
 
@@ -597,6 +634,8 @@
 						<!-- Miniatires Slider -->
 
 						<div class="miniature-slider-box  wow fadeInUp">
+
+							<h3 class="resp-tab-600">Другие модели серии</h3>
 
 							<div class="append-arrows-miniatures-slider"></div>
 
@@ -757,8 +796,8 @@
 							<div class="thumbnail">
 								
 								<div class="icon-box">
-									
-									<i class="advantages-icon icon-1"></i>
+
+									<img src="img/advantages/advantage_01.png" alt="" class="wow zoomIn">
 
 								</div>
 
@@ -769,8 +808,8 @@
 							<div class="thumbnail">
 								
 								<div class="icon-box">
-									
-									<i class="advantages-icon icon-2"></i>
+
+									<img src="img/advantages/advantage_02.png" alt="" class="wow zoomIn">
 
 								</div>
 
@@ -781,20 +820,20 @@
 							<div class="thumbnail">
 								
 								<div class="icon-box">
-									
-									<i class="advantages-icon icon-3"></i>
+
+									<img src="img/advantages/advantage_03.png" alt="" class="wow zoomIn">
 
 								</div>
 
-								<p>Профессиональная установка</p>
+								<p class="word-br">Профессиональная установка</p>
 
 							</div>
 
 							<div class="thumbnail">
 								
 								<div class="icon-box">
-									
-									<i class="advantages-icon icon-4"></i>
+
+									<img src="img/advantages/advantage_04.png" alt="" class="wow zoomIn">
 
 								</div>
 
@@ -805,8 +844,8 @@
 							<div class="thumbnail">
 								
 								<div class="icon-box">
-									
-									<i class="advantages-icon icon-5"></i>
+
+									<img src="img/advantages/advantage_05.png" alt="" class="wow zoomIn">
 
 								</div>
 
@@ -817,8 +856,8 @@
 							<div class="thumbnail">
 								
 								<div class="icon-box">
-									
-									<i class="advantages-icon icon-6"></i>
+
+									<img src="img/advantages/advantage_06.png" alt="" class="wow zoomIn">
 
 								</div>
 
@@ -846,25 +885,63 @@
 
 						</header>
 
-						<div class="services-thumbnails wow fadeIn" id="services-mosaic">
-							
-							<div class="thumbnail item-romb" style="background-image: url(img/thumb_photo_1.jpg);">
+						<div class="services-thumbnails-box">
 
-						<!-- 		<div class="descript">
+							<!-- <div class="services-descripts"></div> -->
+
+							<div class="services-thumbnails wow fadeIn" id="services-mosaic">
+								
+								<div class="thumbnail item-romb" style="background-image: url(img/thumb_photo_1.jpg);">
+
+									<div class="descript desc-1">
+										
+										<p>Строительство финской сауны</p>
+
+									</div>
+
+								</div>
+
+								<div class="thumbnail item-romb"  style="background-image: url(img/thumb_photo_2.jpg);">
 									
-									<p>Строительство финской сауны</p>
+									<div class="descript desc-2">
+										
+										<p>Строительство русской бани</p>
 
-								</div> -->
+									</div>
 
+								</div>
+
+								<div class="thumbnail item-romb"  style="background-image: url(img/thumb_photo_3.jpg);">
+									
+									<div class="descript desc-3">
+										
+										<p>Строительство турецких бань, хамаммов</p>
+
+									</div>
+
+								</div>
+
+								<div class="thumbnail item-romb"  style="background-image: url(img/thumb_photo_4.jpg);">
+									
+									<div class="descript desc-4">
+										
+										<p>Услуги по дизайну</p>
+
+									</div>
+
+								</div>
+
+								<div class="thumbnail item-romb"  style="background-image: url(img/thumb_photo_5.jpg);">
+									
+									<div class="descript desc-5">
+										
+										<p>Комплексное обслуживание SPA центров</p>
+
+									</div>
+
+								</div>
+	 
 							</div>
-
-							<div class="thumbnail item-romb"  style="background-image: url(img/thumb_photo_2.jpg);"></div>
-
-							<div class="thumbnail item-romb"  style="background-image: url(img/thumb_photo_3.jpg);"></div>
-
-							<div class="thumbnail item-romb"  style="background-image: url(img/thumb_photo_4.jpg);"></div>
-
-							<div class="thumbnail item-romb"  style="background-image: url(img/thumb_photo_5.jpg);"></div>
 
 						</div>
 
@@ -880,7 +957,9 @@
 
 						<header>
 							
-							<h2>Карта проезда</h2>
+							<h2 class="novisible-600">Карта проезда</h2>
+
+							<h2 class="resp-tab-600">Наши контакты</h2>
 
 						</header>
 
@@ -898,7 +977,7 @@
 									
 									<h3>Адрес офиса:</h3>
 
-									<p>117335, г. Москва, ул. Вавилова, д. 89</p>
+									<p>117335, г. Москва,<br /> ул. Вавилова, д. 89</p>
 
 								</div>
 
@@ -964,9 +1043,9 @@
 					</div>
 
 
-					<div class="map-box">
+					<div class="map-sect">
 
-						<div class="row">
+						<div class="send-box-row">
 
 							<div class="send-box wow fadeInLeftBig">
 								
@@ -1017,8 +1096,14 @@
 							</div>
 
 						</div>
-						
-						<div id="map"></div>
+
+						<h2 class=" resp-tab-600">Карта проезда</h2>
+
+						<div class="map-box">						
+							
+							<div id="map"></div>
+
+						</div>
 
 					</div>
 
@@ -1033,58 +1118,64 @@
 			
 			<div class="footer top-bottom-sect">
 
+				<div class="bottom-shape"></div>
+
 				<div class="row offset-ziro">
 				
-				<div class="col col-1">
-					
-					<a href="#" class="logo wow fadeInUp">
+					<div class="col col-1">
 						
-						<img src="img/logo.png" class="logo-img" alt="Дома Саун">
-
-						<h2>Все для бани и сауны</h2>
-
-					</a>
-
-				</div>
-
-				<div class="col col-2">
-					
-					<ul class="main-nav">
-						
-						<li><a href="#" class="main-nav-link">Оборудование</a></li>
-						<li><a href="#" class="main-nav-link">Услуги</a></li>
-						<li><a href="#" class="main-nav-link">Доставка</a></li>
-						<li><a href="#" class="main-nav-link">Оплата</a></li>
-
-					</ul>
-
-				</div>
-
-				<div class="col col-3">
-					
-					<div class="cash-box">
-
-						<div class="cash-icon-box">
+						<a href="#" class="logo wow fadeInUp">
 							
-							<i class="cash-icon"></i>
+							<img src="img/logo.png" class="logo-img" alt="Дома Саун">
 
-							<p>2</p>
+							<h2>Все для бани и сауны</h2>
 
-						</div>
+						</a>
 
-						<div class="cash-link-box">
+					</div>
 
-							<a href="#" class="cash-link">Оформить</a>
+					<div class="col col-2">
+						
+						<ul class="main-nav">
+							
+							<li><a href="#" class="main-nav-link">Оборудование</a></li>
+							<li><a href="#" class="main-nav-link">Услуги</a></li>
+							<li><a href="#" class="main-nav-link">Доставка</a></li>
+							<li><a href="#" class="main-nav-link">Оплата</a></li>
+
+						</ul>
+
+					</div>
+
+					<div class="col col-3">
+						
+						<div class="cash-box">
+
+							<div class="cash-icon-box">
+								
+								<i class="cash-icon"></i>
+
+								<p>2</p>
+
+							</div>
+
+							<div class="cash-link-box">
+
+								<a href="#" class="cash-link">Оформить</a>
+
+							</div>
 
 						</div>
 
 					</div>
 
-				</div>
+					<div class="col to-top-col">
+						
+						<button type="button" class="scroll-top"></button>
 
-			</div>
+					</div>
 
-			<div class="bottom-shape"></div>
+				</div>				
 
 			</div>
 
@@ -1099,6 +1190,17 @@
 
 		<script type="text/javascript">
 
+
+			(function($){
+
+				$(window).on("load",function(){
+
+					$(".scroll").mCustomScrollbar();
+
+				});
+
+			})(jQuery);
+
 			$(".big-slider").slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
@@ -1111,17 +1213,31 @@
 
 			$(".miniatures-slider").slick({
 				slidesToShow: 4,
-				slidesToScroll: 1,
+				slidesToScroll: 2,
 				asNavFor: ".big-slider",
 				dots: false,
 				arrows: true,
 				focusOnSelect: true,
 				appendArrows: $(".append-arrows-miniatures-slider"),
 				responsive: [
+				{
+			      breakpoint: 1024,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 1
+			      }
+			    },
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1
+			      }
+			    },
 			    {
 			      breakpoint: 480,
 			      settings: {
-			        slidesToShow: 2,
+			        slidesToShow: 1,
 			        slidesToScroll: 1
 			      }
 			    }
@@ -1133,6 +1249,16 @@
 			gap :  8,
 			itemSelector : ".item-romb"
 		});
+
+		$("#services-mosaic").on("diamonds:onAutoResize", function(event, newOptions) { 
+
+			if( $(window).width() <= 600 ) {
+
+				newOptions.size = 150
+
+			}
+
+		})
 
 		</script>
 	

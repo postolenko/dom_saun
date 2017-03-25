@@ -3,7 +3,17 @@ if( document.getElementsByClassName("map-box")[0] ) {
 			var map;
 
 			var marker;
-			var image = 'img/map_marker.png';
+			var image;
+
+			if( $(window).width() <= 600 ) {
+
+				image = 'img/map_marker_resp.png';
+
+			} else {
+
+				image = 'img/map_marker.png';
+
+			}
 
 			var styles;
 
@@ -139,13 +149,27 @@ if( document.getElementsByClassName("map-box")[0] ) {
 				var styledMap = new google.maps.StyledMapType(styles,
 				{name: "Styled Map"});
 
-				map = new google.maps.Map(document.getElementById('map'), {
-					center: {lat: 55.680000, lng: 37.5170273},
-					// 55.677679,37.5414273
-					scrollwheel: false,
-					scaleControl: false,
-					zoom: 14
-				});
+				if( $(window).width() <= 600 ) {
+
+					map = new google.maps.Map(document.getElementById('map'), {
+						center: {lat: 55.665000, lng: 37.5390273},
+						// 55.677679,37.5414273
+						scrollwheel: false,
+						scaleControl: false,
+						zoom: 13
+					});
+
+				} else {
+
+					map = new google.maps.Map(document.getElementById('map'), {
+						center: {lat: 55.680000, lng: 37.5170273},
+						// 55.677679,37.5414273
+						scrollwheel: false,
+						scaleControl: false,
+						zoom: 14
+					});
+
+				}
 
 				marker = new google.maps.Marker({
 					map: map,

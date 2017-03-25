@@ -69,8 +69,8 @@
     width: 238px;
     height: 238px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: 4;
     border: 2px solid #e1e1e0;
     -webkit-border-radius: 33px;
@@ -81,6 +81,7 @@
 }
 
 .diamond-box-inner {
+    outline: 2px solid green;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
