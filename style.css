@@ -2213,6 +2213,7 @@ footer {
 }
 
 .footer .to-top-col {
+    display: none;
     width: 25%;
     text-align: right;
 }
