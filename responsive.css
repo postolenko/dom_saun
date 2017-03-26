@@ -148,11 +148,12 @@
 	}
 
 	.descript.romb-desc-3:after {
-	    height:	72px;
+	    height:	89px;
 	}
 
 	.descript.romb-desc-3:before {
-	    bottom: -105px;
+	    bottom: -120px;
+    	left: -5px;
 	}
 
 	.descript.romb-desc-4 {
@@ -599,11 +600,11 @@
 	}
 
 	.services-thumbnails {
-	    min-height: 785px;
+	    min-height: 1108px;
 	}
 
 	.item-romb {
-	    width: 70%;
+	    width: 56%;
 	    max-width: 320px;
 	}
 
@@ -617,7 +618,12 @@
 	}
 
 	.romb-desc-1:before {
-	    bottom: -120px;
+	    bottom: -148px;
+	}
+
+	.romb-desc-1:after {
+		height: 120px;
+	    bottom: 0;
 	}
 
 	.item-romb-2 {
@@ -663,6 +669,29 @@
 
 	.item-romb-4 {
 	    left: 27%;
+	}
+
+	.descript.romb-desc-4 {
+	    min-width: 156px;
+	}
+
+	.descript.romb-desc-4:after {
+		display: none;
+	}
+
+	.descript.romb-desc-4 p {
+	    top: -22px;
+	    left: -100%;
+	}
+
+	.descript.romb-desc-4 p span {
+	    bottom: 3px;
+	    left: 7px;
+	}
+
+	.item-romb-4 .coor {
+	    top: 98%;
+	    left: 44%;
 	}
 
 	.item-romb-5 {
@@ -830,6 +859,89 @@
 	.big-slider-slide .price {
 	    top: -67px;
 	    left: 7px;
+	}
+
+	/*----------------------------*/
+
+	.sect-4 {
+	    padding: 30px 0;
+	}
+
+	.services-thumbnails-box {
+	    margin: 49px 0 112px 0;
+	}
+
+	.services-thumbnails {
+	    min-height: 821px;
+	}
+
+	.descript p {
+	    font-size: 14px;
+	    line-height: 15px;
+	}
+
+	.romb-desc-1:before {
+	    bottom: -112px;
+	}
+
+	.romb-desc-1:after {
+	    height: 85px;
+	    bottom: 0;
+	}
+
+	.descript.romb-desc-2 {
+	    min-width: 123px;
+	}
+
+	.descript.romb-desc-2:before {
+	    bottom: -22px;
+	}
+
+	.romb-desc-2 p span {
+	    top: 20px;
+	}
+
+	.item-romb-3 .coor {
+	    top: 0;
+	    left: 31%;
+	}
+
+	.descript.romb-desc-3 {
+	    min-width: 177px;
+	}
+
+	.romb-desc-3 p {
+	    position: relative;
+	    left: -100%;
+	    padding: 0 33% 0 0;
+	}
+
+	.descript.romb-desc-3 p span {
+	    top: 0;
+	    left: 0;
+	    position: relative;
+	}
+
+	.descript.romb-desc-3:before {
+		bottom: -97px;
+		left: -4px;
+	}
+
+	.descript.romb-desc-3:after {
+	    height: 42px;
+	}
+
+	.item-romb-5 .coor {
+	    top: 98%;
+	    left: 56%;
+	}
+
+	.descript.romb-desc-5:after {
+	    height: 96px;
+	}
+
+	.descript.romb-desc-5 p {
+	    left: 0;
 	}
 
 	/*----------------------------*/

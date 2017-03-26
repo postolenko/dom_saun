@@ -316,6 +316,12 @@ $(document).ready(function() {
 
             });
 
+            $(".item-romb:even").css({
+
+                "top" : 0
+
+            });
+
         } else {
 
             descriptIndex = 0;
