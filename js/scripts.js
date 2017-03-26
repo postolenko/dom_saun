@@ -240,7 +240,7 @@ $(document).ready(function() {
 
                     descriptTopCoor = $(".coor:eq("+ descriptIndex +")").offset().top - $(".item-romb:eq("+ descriptIndex +") .descript").height();
 
-                }               
+                }
 
                 $(".item-romb:eq("+ descriptIndex +") .descript").offset({left: descriptLeftCoor, top: descriptTopCoor});
 
@@ -308,16 +308,40 @@ $(document).ready(function() {
 
         });
 
-        $(".item-romb:odd").css({
+        if( bodyWidth > 600 ) {
 
-            "top" : $(".item-romb").width() / 2 - ( $(".item-romb").width() * .06 ) + "px"
+            $(".item-romb:odd").css({
 
-        });
+                "top" : $(".item-romb").width() / 2 - ( $(".item-romb").width() * .06 ) + "px"
+
+            });
+
+        } else {
+
+            descriptIndex = 0;
+
+            $(".item-romb").each(function(){
+
+                descriptIndex++;
+
+                var topCoorRomb = ( $(".item-romb").width() - ( $(".item-romb").width() * .2 ) ) * descriptIndex;
+
+                $(".item-romb:eq("+ descriptIndex +")").css({
+
+                    "top" : topCoorRomb + "px"
+
+                });                
+
+                console.log(descriptIndex);
+
+            });
+
+        }
 
     }
 
 
-    // ------------------------------------------
+    // -----------------------------------------3
 
     function getSendBoxPosition(bodyWidth) {        
 

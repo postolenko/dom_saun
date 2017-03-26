@@ -593,6 +593,84 @@
 
 	/*--------------------------------------*/
 
+	.services-thumbnails-box {
+	    margin: 125px 0 110px 0;
+	    padding: 0 0 0 8%;
+	}
+
+	.services-thumbnails {
+	    min-height: 785px;
+	}
+
+	.item-romb {
+	    width: 70%;
+	    max-width: 320px;
+	}
+
+	.descript p {
+	    font-size: 15px;
+	    line-height: 17px;
+	}
+
+	.item-romb-1 .coor {
+	    top: 67%;
+	}
+
+	.romb-desc-1:before {
+	    bottom: -120px;
+	}
+
+	.item-romb-2 {
+	    left: 26%;
+	}
+
+	.item-romb-2 .coor {
+	    top: 69%;
+	    left: 0;
+	}
+
+/*	.descript.romb-desc-2 p {
+	    text-align: right;
+	    left: 0;
+	}*/
+/*
+	.romb-desc-2 p span {
+	    left: 47px;
+	}*/
+
+	.item-romb-3 {
+	    left: 0;
+	}
+
+	.item-romb-3 .coor {
+	    top: 0;
+	    left: 61%;
+	}
+
+	.descript.romb-desc-3 {
+	    min-width: 227px;
+	}
+
+	.romb-desc-3 p {
+		position: relative;
+		left: -100%;
+	}
+
+	.descript.romb-desc-3 p span {
+	    top: 19px;
+	    left: 6px;
+	}
+
+	.item-romb-4 {
+	    left: 27%;
+	}
+
+	.item-romb-5 {
+		left: 0;
+	}
+
+	/*---------------------------------*/
+
 	.contacts-sect {
 	    padding: 17px 0 0 0;
 	}
