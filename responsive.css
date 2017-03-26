@@ -120,6 +120,14 @@
 
 	/*--------------------------------*/
 
+	.services-thumbnails {
+	    min-height: 377px;
+	}
+
+	.services-thumbnails-box {
+		margin: 125px 0 0 0;
+	}
+
 	.descript p {
 	    font-size: 18px;
 	    line-height: 22px;
@@ -390,6 +398,13 @@
 
 	/*-----------------------------------------*/
 
+	.services-thumbnails {
+	    padding: 110px 0 25px 0;
+	}
+
+	/*-----------------------------------------*/
+
+
 	.advantages-sect {
 		background-image: url(img/advantages_tablet_bg.jpg);
 		padding: 18px 0 25px 0;
@@ -600,7 +615,7 @@
 	}
 
 	.services-thumbnails {
-	    min-height: 1108px;
+	    min-height: 1008px;
 	}
 
 	.item-romb {
@@ -644,7 +659,7 @@
 	    left: 47px;
 	}*/
 
-	.item-romb-3 {
+	/*.item-romb-3 {
 	    left: 0;
 	}
 
@@ -665,6 +680,40 @@
 	.descript.romb-desc-3 p span {
 	    top: 19px;
 	    left: 6px;
+	}*/
+
+	.item-romb-3 {
+	    left: 0;
+	}
+
+	.item-romb-3 .coor {
+	    top: 0;
+	    left: 96%;
+	}
+
+	.descript.romb-desc-3 {
+	    min-width: 137px;
+	}
+
+	.romb-desc-3 p {
+	    position: relative;
+	    left: 0;
+	    padding: 0 3% 0 0;
+	}
+
+	.descript.romb-desc-3 p span {
+	    top: 0;
+	    left: 0;
+	    position: relative;
+	}
+
+	.descript.romb-desc-3:before {
+		bottom: -56px;
+		left: -4px;
+	}
+
+	.descript.romb-desc-3:after {
+	    height: 0;
 	}
 
 	.item-romb-4 {
@@ -696,6 +745,25 @@
 
 	.item-romb-5 {
 		left: 0;
+	}
+
+	.item-romb-5 .coor {
+	    top: 64%;
+	    left: 98%;
+	}
+
+	.descript.romb-desc-5:before {
+	    bottom: -5px;
+	}
+
+	.descript.romb-desc-5:after {
+	    height: 0;
+	}
+
+	.descript.romb-desc-5 p {
+	    text-align: right;
+	    padding: 0 1% 0 0;
+	    left: 0;
 	}
 
 	/*---------------------------------*/
@@ -901,19 +969,20 @@
 	    top: 20px;
 	}
 
+	/*
 	.item-romb-3 .coor {
 	    top: 0;
-	    left: 31%;
+	    left: 96%;
 	}
 
 	.descript.romb-desc-3 {
-	    min-width: 177px;
+	    min-width: 120px;
 	}
 
 	.romb-desc-3 p {
 	    position: relative;
-	    left: -100%;
-	    padding: 0 33% 0 0;
+	    left: 0;
+	    padding: 0 0 0 4%;
 	}
 
 	.descript.romb-desc-3 p span {
@@ -923,15 +992,15 @@
 	}
 
 	.descript.romb-desc-3:before {
-		bottom: -97px;
+		bottom: -52px;
 		left: -4px;
 	}
 
 	.descript.romb-desc-3:after {
-	    height: 42px;
-	}
+	    height: 0;
+	}*/
 
-	.item-romb-5 .coor {
+/*	.item-romb-5 .coor {
 	    top: 98%;
 	    left: 56%;
 	}
@@ -942,7 +1011,7 @@
 
 	.descript.romb-desc-5 p {
 	    left: 0;
-	}
+	}*/
 
 	/*----------------------------*/
 
@@ -1010,8 +1079,23 @@
 
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 480px) {
 
+	.services-thumbnails {
+	    min-height: 830px;
+	}
+
+}
+
+@media only screen and (max-width: 350px) {
+
+	.services-thumbnails {
+	    min-height: 630px;
+	}
+
+}
+
+@media only screen and (min-width: 769px) 83
 	.main-nav {
 		display: block !important;
 		height: auto !important;
