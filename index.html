@@ -22,7 +22,7 @@
 
 	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
 
-	<link rel="stylesheet" type="text/css" href="vendors/css/diamonds.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/diamonds.css" /> -->
 
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css" />
 
@@ -32,7 +32,7 @@
 
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
-	<script type="text/javascript" src="vendors/js/jquery.diamonds.js"></script>
+<!-- 	<script type="text/javascript" src="vendors/js/jquery.diamonds.js"></script> -->
 
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
 
@@ -887,13 +887,27 @@
 
 						<div class="services-thumbnails-box">
 
-							<!-- <div class="services-descripts"></div> -->
-<!-- 
-							<div class="services-thumbnails wow fadeIn" id="services-mosaic">
-								
-								<div class="thumbnail item-romb" style="background-image: url(img/thumb_photo_1.jpg);">
+							<div class="services-descripts"></div>
 
-									<div class="descript desc-1">
+							<div class="services-thumbnails wow fadeIn">
+								
+								<div class="thumbnail item-romb item-romb-1">
+
+									<div class="romb">
+
+										<div class="img-box">
+
+											<!-- <img src="img/thumb_photo_1.jpg" alt=""> -->
+
+											<div class="img" style="background-image: url(img/thumb_photo_1.jpg);"></div>
+
+										</div>
+
+										<div class="coor"></div>
+
+									</div>
+
+									<div class="descript romb-desc-1">
 										
 										<p>Строительство финской сауны</p>
 
@@ -901,7 +915,145 @@
 
 								</div>
 
-								<div class="thumbnail item-romb"  style="background-image: url(img/thumb_photo_2.jpg);">
+								<div class="thumbnail item-romb item-romb-2">
+
+									<div class="romb">
+
+										<div class="img-box">
+
+											<!-- <img src="img/thumb_photo_2.jpg" alt=""> -->
+
+											<div class="img" style="background-image: url(img/thumb_photo_2.jpg);"></div>
+
+										</div>
+
+										<div class="coor"></div>
+
+									</div>
+
+									<div class="descript romb-desc-2">
+										
+										<p>Строительство <span>русской бани</span></p>
+
+									</div>
+
+								</div>
+
+								<div class="thumbnail item-romb item-romb-3">
+
+									<div class="romb">
+
+										<div class="img-box">
+
+											<!-- <img src="img/thumb_photo_3.jpg" alt=""> -->
+
+											<div class="img" style="background-image: url(img/thumb_photo_3.jpg);"></div>
+
+										</div>
+
+										<div class="coor"></div>
+
+									</div>
+
+									<div class="descript romb-desc-3">
+										
+										<p>Строительство турецких бань,<span>хамаммов</span></p>
+
+									</div>
+
+								</div>
+
+								<div class="thumbnail item-romb item-romb-4">
+
+									<div class="romb">
+
+										<div class="img-box">
+
+											<!-- <img src="img/thumb_photo_4.jpg" alt=""> -->
+
+											<div class="img" style="background-image: url(img/thumb_photo_4.jpg);"></div>
+
+										</div>
+
+										<div class="coor"></div>
+
+									</div>
+
+									<div class="descript romb-desc-4 bottom-position">
+										
+										<p><span>Услуги по дизайну</span></p>
+
+									</div>
+
+								</div>
+
+								<div class="thumbnail item-romb item-romb-5">
+
+									<div class="romb">
+
+										<div class="img-box">
+
+											<!-- <img src="img/thumb_photo_5.jpg" alt=""> -->
+
+											<div class="img" style="background-image: url(img/thumb_photo_5.jpg);"></div>
+
+										</div>
+
+										<div class="coor"></div>
+
+									</div>
+
+									<div class="descript romb-desc-5 bottom-position">
+										
+										<p>Комплексное обслуживание SPA центров</p>
+
+									</div>
+
+								</div>
+
+					<!-- 			<div class="thumbnail item-romb item-romb-2">
+
+									<div class="img-box">
+
+										<img src="img/thumb_photo_2.jpg" alt="">
+
+									</div>
+
+								</div>
+
+								<div class="thumbnail item-romb item-romb-3">
+
+									<div class="img-box">
+
+										<img src="img/thumb_photo_3.jpg" alt="">
+
+									</div>
+
+								</div>
+
+								<div class="thumbnail item-romb item-romb-4">
+
+									<div class="img-box">
+
+										<img src="img/thumb_photo_4.jpg" alt="">
+
+									</div>
+
+								</div>
+
+								<div class="thumbnail item-romb item-romb-5">
+
+									<div class="img-box">
+
+										<img src="img/thumb_photo_5.jpg" alt="">
+
+									</div>
+
+								</div> -->
+
+
+
+<!-- 								<div class="thumbnail item-romb"  style="background-image: url(img/thumb_photo_2.jpg);">
 									
 									<div class="descript desc-2">
 										
@@ -939,9 +1091,9 @@
 
 									</div>
 
-								</div>
+								</div> -->
 	 
-							</div> -->
+							</div>
 
 						</div>
 
@@ -1244,21 +1396,21 @@
 			  ]
 			});
 
-		$("#services-mosaic").diamonds({
-			size : 365,
-			gap :  8,
-			itemSelector : ".item-romb"
-		});
+		// $("#services-mosaic").diamonds({
+		// 	size : 365,
+		// 	gap :  8,
+		// 	itemSelector : ".item-romb"
+		// });
 
-		$("#services-mosaic").on("diamonds:onAutoResize", function(event, newOptions) { 
+		// $("#services-mosaic").on("diamonds:onAutoResize", function(event, newOptions) { 
 
-			if( $(window).width() <= 600 ) {
+		// 	if( $(window).width() <= 600 ) {
 
-				newOptions.size = 150
+		// 		newOptions.size = 150
 
-			}
+		// 	}
 
-		})
+		// })
 
 		</script>
 	

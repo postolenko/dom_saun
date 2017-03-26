@@ -120,6 +120,51 @@
 
 	/*--------------------------------*/
 
+	.descript p {
+	    font-size: 18px;
+	    line-height: 22px;
+	}
+
+	.romb-desc-1 {
+		min-width: 274px;
+	}
+
+	.descript.romb-desc-2:before {
+	    bottom: -29px;
+	}
+
+	.descript.romb-desc-2 {
+	    min-width: 184px;
+	}
+
+	.romb-desc-2 p span {
+		position: absolute;
+		top: 22px;
+		left: 5px;
+	}
+
+	.descript.romb-desc-3 {
+	    min-width: 284px;
+	}
+
+	.descript.romb-desc-3:after {
+	    height:	72px;
+	}
+
+	.descript.romb-desc-3:before {
+	    bottom: -105px;
+	}
+
+	.descript.romb-desc-4 {
+	    min-width: 184px;
+	}
+
+	.descript.romb-desc-5:after {
+	    height: 191px;
+	}
+
+	/*--------------------------------*/
+
 	.contacts-thumbnails .thumbnail {
 	    width: 33%;
 	    padding: 7px 1%;
@@ -363,6 +408,38 @@
 	.advantages-thumbnails .thumbnail {
 	    width: 33.33%;
 	    padding: 14px 2%;
+	}
+
+	/*--------------------------------*/
+
+	.descript p {
+	    font-size: 17px;
+	    line-height: 19px;
+	}
+
+	.descript.romb-desc-2:before {
+	    bottom: -26px;
+	}
+
+	.descript.romb-desc-2 {
+	    min-width: 143px;
+	}
+
+	.descript.romb-desc-3 {
+	    min-width: 268px;
+	}
+
+	.descript.romb-desc-4 p span {
+	    bottom: -23px;
+	    left: 7px;
+	}
+
+	.romb {
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		-ms-border-radius: 15px;
+		-o-border-radius: 15px;
+		border-radius: 15px;
 	}
 
 	/*--------------------------------*/

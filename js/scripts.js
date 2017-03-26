@@ -33,6 +33,10 @@ $(document).ready(function() {
 
     getSlideImgPosition(bodyWidth);
 
+    getRombParameters();
+
+    getDescriptPosition(descriptIndex);
+
 
     $(window).resize(function() {
 
@@ -60,7 +64,9 @@ $(document).ready(function() {
 
         getSlideImgPosition(bodyWidth);
 
-        // getDescriptPosition(descriptIndex);
+        getDescriptPosition(descriptIndex);
+
+        getRombParameters();
 
 
     });
@@ -95,7 +101,7 @@ $(document).ready(function() {
 
     //     });
 
-    //     getDescriptPosition(descriptIndex);
+    //     // getDescriptPosition(descriptIndex);
 
     // });
 
@@ -128,8 +134,6 @@ $(document).ready(function() {
                 $(this).addClass("active");
 
                 $(".resp-nav").fadeIn(300);
-
-                console.log("dsdsd");
 
             }
 
@@ -216,54 +220,99 @@ $(document).ready(function() {
 
         }
 
+        
+
+        function getDescriptPosition(descriptIndex) {
+
+            var descriptLeftCoor;
+
+            descriptIndex = 0;
+
+            $(".item-romb").each(function(){ 
+
+                descriptLeftCoor = $(".coor:eq("+ descriptIndex +")").offset().left;
+
+                if( $(".item-romb:eq("+ descriptIndex +") .descript").hasClass("bottom-position") ) {
+
+                    descriptTopCoor = $(".coor:eq("+ descriptIndex +")").offset().top;
+
+                } else {   
+
+                    descriptTopCoor = $(".coor:eq("+ descriptIndex +")").offset().top - $(".item-romb:eq("+ descriptIndex +") .descript").height();
+
+                }               
+
+                $(".item-romb:eq("+ descriptIndex +") .descript").offset({left: descriptLeftCoor, top: descriptTopCoor});
+
+                descriptIndex++;
+
+            });
+
+        }
 
 
-    function getDescriptPosition(descriptIndex) {
+    // function getDescriptPosition(descriptIndex) {
 
-        var descriptLeftCoor;
+    //     var descriptLeftCoor;
 
-        descriptIndex = 0;
+    //     descriptIndex = 0;
 
-        $(".item-romb").each(function(){            
+    //     $(".item-romb").each(function(){            
 
-            // $(".item-romb:eq("+ descriptIndex +") .descript").appendTo($(".services-descripts"));
+    //         // $(".item-romb:eq("+ descriptIndex +") .descript").appendTo($(".services-descripts"));
 
-            // $(".diamond-box:eq("+ descriptIndex +")").append("<div class='descript-coor'></div>");
+    //         // $(".diamond-box:eq("+ descriptIndex +")").append("<div class='descript-coor'></div>");
 
-            // console.log(descriptIndex);
+    //         // console.log(descriptIndex);
 
-            if( $(".diamond-box:eq("+ descriptIndex +") div").hasClass("descript-coor")) {                
+    //         if( $(".diamond-box:eq("+ descriptIndex +") div").hasClass("descript-coor")) {                
 
-                return true;
+    //             return true;
 
-            } else {
+    //         } else {
 
-                $(".diamond-box:eq("+ descriptIndex +")").append("<div class='descript-coor'></div>");
+    //             $(".diamond-box:eq("+ descriptIndex +")").append("<div class='descript-coor'></div>");
 
-            }
+    //         }
 
-            descriptLeftCoor = $(".descript-coor:eq("+ descriptIndex +")").offset().left;
-            descriptTopCoor = $(".descript-coor:eq("+ descriptIndex +")").offset().top - $(".services-descripts .descript:eq("+ descriptIndex +")").height() + 4;
+    //         descriptLeftCoor = $(".descript-coor:eq("+ descriptIndex +")").offset().left;
+    //         descriptTopCoor = $(".descript-coor:eq("+ descriptIndex +")").offset().top - $(".services-descripts .descript:eq("+ descriptIndex +")").height() + 4;
 
-            // $(".services-descripts .descript:eq("+ descriptIndex +")").offset( { top:descriptTopCoor, left: descriptLeftCoor });
+    //         // $(".services-descripts .descript:eq("+ descriptIndex +")").offset( { top:descriptTopCoor, left: descriptLeftCoor });
 
-            // $(".services-descripts .descript:eq("+ descriptIndex +")").css({
-            //                                                                 // "left" : descriptLeftCoor + "px"
-            //                                                                 // "top" : descriptTopCoor + "px",
-            //                                                                 // "margin-left" : -$(".services-descripts .descript:eq("+ descriptIndex +")").width() + "px"
-            //                                                                 // "margin-top" : -$(".services-descripts .descript:eq("+ descriptIndex +")").width() + "px"
-            //                                                             });
+    //         // $(".services-descripts .descript:eq("+ descriptIndex +")").css({
+    //         //                                                                 // "left" : descriptLeftCoor + "px"
+    //         //                                                                 // "top" : descriptTopCoor + "px",
+    //         //                                                                 // "margin-left" : -$(".services-descripts .descript:eq("+ descriptIndex +")").width() + "px"
+    //         //                                                                 // "margin-top" : -$(".services-descripts .descript:eq("+ descriptIndex +")").width() + "px"
+    //         //                                                             });
 
-            // $(".services-descripts .descript:eq("+ descriptIndex +") p").css({"top" : -$(".services-descripts .descript:eq("+ descriptIndex +") p").outerHeight(true) + "px"});
+    //         // $(".services-descripts .descript:eq("+ descriptIndex +") p").css({"top" : -$(".services-descripts .descript:eq("+ descriptIndex +") p").outerHeight(true) + "px"});
 
-            // console.log(descriptLeftCoor);
+    //         // console.log(descriptLeftCoor);
 
-            // console.log(descriptIndex);
+    //         // console.log(descriptIndex);
 
-            descriptIndex++;
+    //         descriptIndex++;
+
+    //     });
+
+
+    // }
+
+    function getRombParameters() {
+
+        $(".item-romb").css({
+
+            "height" : $(".item-romb").width() + "px"
 
         });
 
+        $(".item-romb:odd").css({
+
+            "top" : $(".item-romb").width() / 2 - ( $(".item-romb").width() * .06 ) + "px"
+
+        });
 
     }
 
