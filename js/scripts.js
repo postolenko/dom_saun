@@ -12,12 +12,16 @@ $(document).ready(function() {
     var triangleShapeCount;
     var triangleShapeIndex;
 
-    var widthTriangle;;
+    var widthTriangle;
 
     // ------------------
 
     var descriptLeftCoor;
     var descriptIndex;
+
+    // ------------------
+
+    var topCoorRomb;
 
     // ------------------
 
@@ -43,7 +47,10 @@ $(document).ready(function() {
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
 
-        $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
+        $(".wrapper").css({
+            "padding-bottom" :  $(".footer").outerHeight(true) + "px",
+            "padding-top" :  $(".header").outerHeight() + "px"
+        });
 
         // ----------------------------------------------------------------------------
 
@@ -82,28 +89,6 @@ $(document).ready(function() {
         });
 
     });
-
-
-    // ------------------------------------------------------
-
-
-    // $(function() {
-
-    //     var descriptIndex = 0;
-
-    //     $(".item-romb").each(function(){            
-
-    //         $(".item-romb:eq("+ descriptIndex +") .descript").appendTo($(".services-descripts"));
-
-    //         // $(".diamond-box:eq("+ descriptIndex +")").append("<div class='descript-coor'></div>");
-
-    //         descriptIndex++;
-
-    //     });
-
-    //     // getDescriptPosition(descriptIndex);
-
-    // });
 
 
     // ------------------------------------------------------
@@ -220,85 +205,38 @@ $(document).ready(function() {
 
         }
 
-        
-
-        function getDescriptPosition(descriptIndex) {
-
-            var descriptLeftCoor;
-
-            descriptIndex = 0;
-
-            $(".item-romb").each(function(){ 
-
-                descriptLeftCoor = $(".coor:eq("+ descriptIndex +")").offset().left;
-
-                if( $(".item-romb:eq("+ descriptIndex +") .descript").hasClass("bottom-position") ) {
-
-                    descriptTopCoor = $(".coor:eq("+ descriptIndex +")").offset().top;
-
-                } else {   
-
-                    descriptTopCoor = $(".coor:eq("+ descriptIndex +")").offset().top - $(".item-romb:eq("+ descriptIndex +") .descript").height();
-
-                }
-
-                $(".item-romb:eq("+ descriptIndex +") .descript").offset({left: descriptLeftCoor, top: descriptTopCoor});
-
-                descriptIndex++;
-
-            });
-
-        }
+    // ----------------------------------------
 
 
-    // function getDescriptPosition(descriptIndex) {
+    function getDescriptPosition(descriptIndex) {
 
-    //     var descriptLeftCoor;
+        descriptLeftCoor;
 
-    //     descriptIndex = 0;
+        descriptIndex = 0;
 
-    //     $(".item-romb").each(function(){            
+        $(".item-romb").each(function(){ 
 
-    //         // $(".item-romb:eq("+ descriptIndex +") .descript").appendTo($(".services-descripts"));
+            descriptLeftCoor = $(".coor:eq("+ descriptIndex +")").offset().left;
 
-    //         // $(".diamond-box:eq("+ descriptIndex +")").append("<div class='descript-coor'></div>");
+            if( $(".item-romb:eq("+ descriptIndex +") .descript").hasClass("bottom-position") ) {
 
-    //         // console.log(descriptIndex);
+                descriptTopCoor = $(".coor:eq("+ descriptIndex +")").offset().top;
 
-    //         if( $(".diamond-box:eq("+ descriptIndex +") div").hasClass("descript-coor")) {                
+            } else {   
 
-    //             return true;
+                descriptTopCoor = $(".coor:eq("+ descriptIndex +")").offset().top - $(".item-romb:eq("+ descriptIndex +") .descript").height();
 
-    //         } else {
+            }
 
-    //             $(".diamond-box:eq("+ descriptIndex +")").append("<div class='descript-coor'></div>");
+            $(".item-romb:eq("+ descriptIndex +") .descript").offset({left: descriptLeftCoor, top: descriptTopCoor});
 
-    //         }
+            descriptIndex++;
 
-    //         descriptLeftCoor = $(".descript-coor:eq("+ descriptIndex +")").offset().left;
-    //         descriptTopCoor = $(".descript-coor:eq("+ descriptIndex +")").offset().top - $(".services-descripts .descript:eq("+ descriptIndex +")").height() + 4;
+        });
 
-    //         // $(".services-descripts .descript:eq("+ descriptIndex +")").offset( { top:descriptTopCoor, left: descriptLeftCoor });
+    }
 
-    //         // $(".services-descripts .descript:eq("+ descriptIndex +")").css({
-    //         //                                                                 // "left" : descriptLeftCoor + "px"
-    //         //                                                                 // "top" : descriptTopCoor + "px",
-    //         //                                                                 // "margin-left" : -$(".services-descripts .descript:eq("+ descriptIndex +")").width() + "px"
-    //         //                                                                 // "margin-top" : -$(".services-descripts .descript:eq("+ descriptIndex +")").width() + "px"
-    //         //                                                             });
-
-    //         // $(".services-descripts .descript:eq("+ descriptIndex +") p").css({"top" : -$(".services-descripts .descript:eq("+ descriptIndex +") p").outerHeight(true) + "px"});
-
-    //         // console.log(descriptLeftCoor);
-
-    //         // console.log(descriptIndex);
-
-    //         descriptIndex++;
-
-    //     });
-
-
-    // }
+    // -----------------------------------------
 
     function getRombParameters() {
 
@@ -330,15 +268,13 @@ $(document).ready(function() {
 
                 descriptIndex++;
 
-                var topCoorRomb = ( $(".item-romb").width() - ( $(".item-romb").width() * .2 ) ) * descriptIndex;
+                topCoorRomb = ( $(".item-romb").width() - ( $(".item-romb").width() * .2 ) ) * descriptIndex;
 
                 $(".item-romb:eq("+ descriptIndex +")").css({
 
                     "top" : topCoorRomb + "px"
 
-                });                
-
-                console.log(descriptIndex);
+                });
 
             });
 
@@ -347,7 +283,7 @@ $(document).ready(function() {
     }
 
 
-    // -----------------------------------------3
+    // -----------------------------------------
 
     function getSendBoxPosition(bodyWidth) {        
 
@@ -372,13 +308,9 @@ $(document).ready(function() {
 
             $(".slide-thumbnails .slide_photo").prependTo($(".slide-thumbnails"));
 
-            console.log("big-slider-slide   " + bodyWidth);
-
         } else {
 
             $(".slide-thumbnails .slide_photo").after($(".slide-thumbnails .col"));
-
-            console.log("big-slider-slide after first col");
 
         }
 
